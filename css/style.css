@@ -395,3 +395,6 @@ div#send-button input#button:hover {
     font-size: 12px;
     color: #333;
 }
+
+/* przy row x-s zmienić padding w @media!!! */
+/* zmienić aby w dropdown menu linki pojawiały się z prawej strony */

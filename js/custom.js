@@ -1,7 +1,7 @@
-$(function() {
+$().ready(function() {
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() >= 100) {
+        if ($(window).scrollTop() >= 200) {
            
             $('#main-nav').addClass('scroll');
             
@@ -21,11 +21,7 @@ $(function() {
      
     window.sr = ScrollReveal({ reset: true });
     sr.reveal('.row'), {delay: 1550};
-    sr.reveal('h1, h2, h3', {delay: 400});
-});
-
-(function($) {
-    "use strict";
+    sr.reveal('h1, h2, h4', {delay: 400});
 
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -50,7 +46,7 @@ $(function() {
         }
     })
 
-})(jQuery);
+});
 
 
 $().ready(function() {
