@@ -68,22 +68,14 @@ div.row p {
     padding: 35px 0;
 }
 
-.navbar-custom {
-    background-color: #0ed8d6;
-    border-color: lightslategray;
-}
 
 .navbar-custom .container-fluid .navbar-header .navbar-brand {
     color: #0ed8d6;
     font-family: 'Droid Serif', serif;
 }
 
-.navbar-custom .container-fluid .navbar-header .navbar-brand:hover, .navbar-custom .container-fluid .navbar-header .navbar-brand:focus, .navbar-custom .container-fluid .navbar-header .navbar-brand:active, .navbar-custom .container-fluid .navbar-header .navbar-brand:active {
-  color: #0ed8d6;
-}
-
-.navbar-custom .navbar-collapse {
-  border-color: lightslategray;
+#main-nav.scroll {
+  background-color: rgba(5, 0, 0, 0.1);
 }
 
 .navbar-custom .navbar-toggle {
@@ -98,6 +90,13 @@ div.row p {
 .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
   background-color: #0ed8d6;
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #0ed8d6;
+    color: white;
+}
+
+
 
 /* HEADER */
 
