@@ -40,7 +40,6 @@ h1, h2, h3 {
 }
 
 .row {
-	padding: 20px 200px;
     margin-bottom: 20px;
 }
 
@@ -64,14 +63,15 @@ div.row p {
     color: white;
 }
 
-.navbar-brand {
-    padding: 35px 0;
-}
 
-
-.navbar-custom .container-fluid .navbar-header .navbar-brand {
+.navbar-custom .container .navbar-header .navbar-brand {
     color: #0ed8d6;
     font-family: 'Droid Serif', serif;
+    padding: 10px 0;
+}
+
+#bs-example-navbar-collapse-1 {
+    padding: 10px 3px;
 }
 
 #main-nav.scroll {
@@ -209,7 +209,7 @@ div#service-icons p {
 	background-color: #f7f7f7;
 }
 
-#portfolio .container-fluid .row .single-portfolio-img {
+#portfolio .container .row .single-portfolio-img {
 	background-position: center;
 	background-size: cover;
     height: 270px;
@@ -254,7 +254,7 @@ div#service-icons p {
 	position: relative;
 }
 
-#portfolio .container-fluid .row .single-portfolio-img .single-portfolio-img-mask {
+#portfolio .container .row .single-portfolio-img .single-portfolio-img-mask {
 	background: rgba(14, 216, 214, 0.7);
     width: 100%;
     height: 100%;
@@ -263,17 +263,17 @@ div#service-icons p {
 	transition: all 0.5s ease-in;	
 }
 
-#portfolio .container-fluid .row .single-portfolio-img .single-portfolio-img-mask i{
+#portfolio .container .row .single-portfolio-img .single-portfolio-img-mask i{
 	font-size: 50px;
 	color: white;
     margin-top: 30%;
 }
 
-#portfolio .container-fluid .row .single-portfolio-img .single-portfolio-img-mask:hover{
+#portfolio .container .row .single-portfolio-img .single-portfolio-img-mask:hover{
 	opacity: 1;
 }
 
-#portfolio .container-fluid .row .single-portfolio-opis {
+#portfolio .container .row .single-portfolio-opis {
 	background-color: white;
 	width: 370px;
 	height: 110px;
@@ -288,14 +288,17 @@ div#service-icons p {
 
 #man1 {
 	background-image: url(../img/team/man-1.jpg);
+    display: inline-block;
 }
 
 #man2 {
 	background-image: url(../img/team/man-2.jpg);
+    display: inline-block;
 }
 
 #woman1 {
 	background-image: url(../img/team/woman-1.jpg);
+    display: inline-block;
 }
 
 section#team div.one-team-member div.member-avatar{
@@ -304,7 +307,7 @@ section#team div.one-team-member div.member-avatar{
 	background-size: cover;
     background-position: center;
 	border-radius: 100%;
-	transform: translateX(38%);
+    text-align: center;
 }
 
 div.one-team-member h4 {
@@ -317,7 +320,6 @@ div.one-team-member h4 {
 
 
 section#contact {
-    padding: 30px 30px;
     background: 
     linear-gradient(
       rgba(5, 0, 0, 0.5), 
@@ -330,32 +332,24 @@ section#contact {
 
 section#contact div.row {
     color: white;
-    padding: 15px 60px;
+    margin: 4% 0;
 }
 
 
 section#contact div#contact-form form input {
-    width: 70%;
     padding: 27px;
     margin-bottom: 15px;
     border: 0 solid #f7f7f7;
-    transform: translateX(22%);
-}
-
-textarea {
-    transform: translateX(-22%);
 }
 
 .form-control {
     display: inline-block;
-    width: 70%;
 }
 
 div#contact-content h3 {
     color: white;
     font-size: 40px;
 }
-
 
 div#send-button input#button {
     background-color: #0ed8d6;
@@ -369,6 +363,12 @@ div#send-button input#button {
 div#send-button input#button:hover {
     background-color: lightslategrey;
 	border: solid 1px lightslategrey;
+}
+
+/* FOOTER */
+
+div#policy, div#tresc {
+    margin-top: 1.5%;
 }
 
 /* COOKIES */
@@ -396,5 +396,21 @@ div#send-button input#button:hover {
     color: #333;
 }
 
-/* przy row x-s zmienić padding w @media!!! */
+@media all and (max-width: 480px) {
+    
+    textarea {
+    transform: none;
+    }
+
+    div.main-header-content h1, div.main-header-content h3 {
+        font-size: 1em;
+    }
+    
+    .row {
+       padding: 0 0;
+       margin-left: 0;
+       margin-right: 0;
+    }
+}
+
 /* zmienić aby w dropdown menu linki pojawiały się z prawej strony */
